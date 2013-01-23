@@ -317,7 +317,7 @@ msgstr[1] ""
 
 msgid ""
 "<strong> Can I request information about myself?</strong>\\n\t\t\t<a "
-"href=\"%s\">No! (Click here for details)</a>"
+"href=\"{{url}}\">No! (Click here for details)</a>"
 msgstr ""
 
 msgid ""

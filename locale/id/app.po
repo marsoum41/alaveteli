@@ -316,7 +316,7 @@ msgstr[0] "{{count}} orang mengikuti otoritas ini"
 msgid ""
 "<strong> Can I request information about myself?</strong>\\n\t\t\t<a "
 "href=\"%s\">No! (Click here for details)</a>"
-msgstr "<strong> Bisakah saya meminta informasi tentang saya sendiri?</strong>\n\t\t\t<a href=\"%s\">Tidak! (Klik di sini untuk rincian)</a>"
+msgstr "<strong> Bisakah saya meminta informasi tentang saya sendiri?</strong>\n\t\t\t<a href=\"{{url}}\">Tidak! (Klik di sini untuk rincian)</a>"
 
 msgid ""
 "<strong><code>commented_by:tony_bowden</code></strong> to search annotations"

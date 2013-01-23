@@ -2784,7 +2784,7 @@ msgid ""
 "This request has been marked for review by the site administrators, who have"
 " not hidden it at this time. If you believe it should be hidden, please <a "
 "href=\"%s\">contact us</a>."
-msgstr "Esse pedido foi marcado para revisão pelos administradores, que ainda não esconderam-no. Se você acha que ele deveria ser escondido, por favor <a href=\"%s\">entre em contato</a>."
+msgstr "Esse pedido foi marcado para revisão pelos administradores, que ainda não esconderam-no. Se você acha que ele deveria ser escondido, por favor <a href=\"{{url}}\">entre em contato</a>."
 
 msgid "This request has been reported for administrator attention"
 msgstr "Esse pedido foi encaminhado para avaliação do administrador"

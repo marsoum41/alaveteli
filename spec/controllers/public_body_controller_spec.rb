@@ -56,12 +56,14 @@ describe PublicBodyController, "when showing a body" do
         assigns[:xapian_requests].results.first[:model].id.should == 913
     end
 
+
     # Test for https://github.com/mysociety/alaveteli/issues/768
     it "should show the same requests in all locales after adding translation (en)" do
         b = public_bodies(:sensible_walks_public_body)
         PublicBody.with_locale(:es) do
-            b.update_attribute(:name, "Spanish sensible walks")
+            b.update_attribute(:short_name, "spanish_sensible_walks")
         end
+        update_xapian_index
         get :show, :url_name => "sensible_walks", :view => 'all'
         assigns[:xapian_requests].results.count.should == 1
         assigns[:xapian_requests].results.first[:model].id.should == 913
@@ -70,9 +72,10 @@ describe PublicBodyController, "when showing a body" do
     it "should show the same requests in all locales after adding translation (es)" do
         b = public_bodies(:sensible_walks_public_body)
         PublicBody.with_locale(:es) do
-            b.update_attribute(:name, "Spanish sensible walks")
+            b.update_attribute(:short_name, "spanish_sensible_walks")
         end
-        get :show, :url_name => "sensible_walks", :view => 'all', :show_locale => "es"
+        update_xapian_index
+        get :show, :url_name => "spanish_sensible_walks", :view => 'all', :show_locale => "es"
         assigns[:xapian_requests].results.count.should == 1
         assigns[:xapian_requests].results.first[:model].id.should == 913
     end
